@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single page layout</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+    * {
+        margin: auto;
+        box-sizing: border-box;
+
+    }
+
+    header {
+        background-color: rgb(243, 154, 169);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 11%;
+    }
+
+    header .logo {
+        width: 50px;
+        height: 60px;
+    }
+
+    header .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+
+    }
+
+    header nav ul li {
+
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: white;
+        box-shadow: 0 0 9px;
+        border-radius: 10px;
+    }
+
+    .mainbox {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to bottom left, pink, plum);
+        display: flex;
+
+    }
+
+    /* .mainbox div{
+            overflow: hidden;
+        } */
+
+    .mainbox div p {
+        color: white;
+        width: 300px;
+        height: max-content;
+        box-shadow: 0 0 9px;
+        border-radius: 10px;
+        padding: 9px;
+
+    }
+
+    .mainbox div img {
+        width: 200px;
+        height: max-content;
+        box-shadow: 0 0 9px;
+        border-radius: 10px;
+        padding: 9px;
+
+    }
+
+    .container {
+        width: 100%;
+        background: rgb(233, 159, 233);
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        /* align-items: cente
+            ; */
+        flex-wrap: wrap;
+    }
+
+    .container .box {
+        width: 20%;
+        height: 150px;
+        background: pink;
+        margin: 20px;
+    }
+
+    .container .box img {
+        width: 100%;
+        height: 150px;
+    }
+
+    footer {
+        background-color: rgb(243, 154, 169);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 11%;
+    }
+
+    footer .logo {
+        width: 50px;
+        height: 60px;
+    }
+
+    footer .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    /* footer div{
+         display: flex;
+        list-style-type: none;
+
+    }
+     */
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg"
+                alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>services</li>
+            </ul>
+
+
+
+        </nav>
+    </header>
+    <div class="mainbox">
+        <div class="box">
+            <p> DOG <br>
+                The dog is a pet animal. A dog has sharp teeth so that it can eat flesh very easily, it has four legs,
+                two ears, two eyes, a tail, a mouth, and a nose. It is a very clever animal and is very useful in
+                catching thieves. It runs very fast, barks loudly and attacks the strangers. A dog saves the life of the
+                master from danger. One can find dogs everywhere in the world. Dogs are a very faithful animal. It has a
+                sharp mind and a strong sense of hearing smelling the things. It also has many qualities like swimming
+                in the water, jumping from anywhere, good smelling sense.
+
+            </p>
+        </div>
+        <div class="box">
+            <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg"
+                alt="">
+        </div>
+
+    </div>
+    <hr>
+    <div class="container">
+        <div class="box"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_KHAcroDycdRKRf1F9Mld4GDSTNyK3p8Yw&s"
+                alt=""></div>
+
+        <div class="box"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWDOrTVeQEn3ikpl41OfC5jeb1ni5loAjyA&s"
+                alt=""></div>
+        <div class="box"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-e8cpwK2vCcOlCS1XMELlOuR9dikuXcdSA&s"
+                alt=""></div>
+    </div>
+    <hr>
+
+    <footer>
+        <div class="logo">
+            <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg"
+                alt="">
+        </div>
+
+        <div>
+
+
+        facebook: <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square'></i><br></a>
+        instagram:<a href="https://www.instagram.com/" target="_blank"> <i class='bx bxl-instagram'></i><br></a>
+        youtube:<a href="https://www.youtube.com/" target="_blank"> <i class='bx bxl-youtube'></i><br></a>
+
+    </div>
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

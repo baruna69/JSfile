@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+
+<body>
+
+    <!--
+     event
+     --------------
+     onclick=>function works on single click
+     onblclick=> function works on double click
+     onmouseover=>function works on hover
+     onmouseout=>function works on removing hover
+     onleyup=>function works on key entered
+     onkeydown=> function works on key pressed
+     onchange =>function works on changing values
+     -->
+    <h1 id="name"></h1>
+    <h1 id="address"></h1>
+    <h1 id="school"></h1>
+    <h1 id="hobby"></h1>
+
+    <button onclick="showName()">show Name</button>
+    <button onclick="showaddress()">show address</button>
+    <button onclick="showschool()">show school</button>
+    <button onclick="showhobby()">show hobby</button>
+
+
+
+    <script>
+        function showName() {
+            //notification
+            // alert("hello my name is rohan");
+
+            // let o = "Orbita Maharjan"
+            // document.write(`my name is ${o}<br>`)
+
+
+            // let s= "satdobato"
+            // document.write(`my address is ${s}`)
+
+            let name = "orbi"
+             document.getElementById('name'). innerHTML = "orbi"
+
+
+
+        }
+
+        function showaddress() {
+            let address= "satdobato"
+            document.getElementById(`address`). innerHTML = "satdobato"
+
+
+        }
+        function showschool() {
+            let school= "united school"
+            document.getElementById(`school`). innerHTML = "united"
+
+
+
+        }
+        function showhobby() {
+            let hobby = "reading"
+            document.getElementById(`hobby`). innerHTML = "reading"
+
+        }
+
+    </script>
+</body>
+
+</html>
